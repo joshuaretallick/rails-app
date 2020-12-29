@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.7.0'
+gem 'bootstrap_form'
 gem 'devise'
 gem 'jquery-rails', '~> 4.4'
 gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
