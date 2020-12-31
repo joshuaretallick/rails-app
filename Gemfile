@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.7.0'
+gem 'will_paginate', '~> 3.3'
 gem 'faker'
 gem 'jquery-rails', '~> 4.4'
 gem 'bootstrap_form'
