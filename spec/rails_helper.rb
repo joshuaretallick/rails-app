@@ -4,8 +4,6 @@ require 'capybara/poltergeist'
 require 'factory_girl_rails'
 require 'capybara/rspec'
 
-config.include Devise::Test::IntegrationHelpers, type: :feature
-config.include FactoryGirl::Syntax::Methods
 Capybara.javascript_driver = :poltergeist
 Capybara.server = :puma
 
@@ -84,6 +82,8 @@ RSpec.configure do |config|
   # The different available types are documented in the features, such as in
   # https://relishapp.com/rspec/rspec-rails/docs
   config.infer_spec_type_from_file_location!
+  config.include Devise::Test::IntegrationHelpers, type: :feature
+  config.include FactoryGirl::Syntax::Methods
 
   # Filter lines from Rails gems in backtraces.
   config.filter_rails_from_backtrace!
