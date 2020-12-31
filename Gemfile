@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.7.0'
+gem 'simplecov', require: false, group: :test
 gem 'will_paginate', '~> 3.3'
 gem 'faker'
 gem 'jquery-rails', '~> 4.4'
@@ -61,7 +62,6 @@ group :test do
   gem 'headless'
   gem 'poltergeist'
   gem 'database_cleaner'
-  gem 'simplecov', '~> 0.20.0'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

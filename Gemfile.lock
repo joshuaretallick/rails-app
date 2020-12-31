@@ -300,7 +300,7 @@ DEPENDENCIES
   rspec-rails (~> 3.6)
   sass-rails (~> 5.1)
   selenium-webdriver
-  simplecov (~> 0.20.0)
+  simplecov
   spring
   turbolinks (~> 5)
   tzinfo-data
