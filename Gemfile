@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.7.0'
+gem 'mini_racer'
 gem 'simplecov', require: false, group: :test
 gem 'will_paginate', '~> 3.3'
 gem 'faker'
